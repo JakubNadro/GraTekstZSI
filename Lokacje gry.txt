@@ -1,0 +1,61 @@
+1.(2, 3) Obóz wojowników - Miejsce spotkań wojowników i poszukiwaczy przygód, szansa na spokojną rozmowę i przerwę od ciągłej walki, niedaleko miasta, jednak nie głeboko w lesie
+Opis : Jesteś w Obozie wojowników. Wokół siebie widzisz ludzi uzbrojonych po zęby rozmawiających na różne tematy. Możesz tutaj spokojnie odpocząć przed następną wyprawą w nieznane.
+
+3.(1, 2, 4, 5) Miasto kupne - Dużo rzeczy do kupienia, ludzi z informacjami oraz bezpieczeństwo murów, to nie oznacza że jest to miejsce idealne (Ciemne uliczki, crime itp.)
+Opis :  Jesteś w mieście. Otaczają Cię ulice tętniące życiem, wydaje się niemal idealne. Kupce targują się, rodziny spacerują i życie się toczy. Jednak szybko widzisz że jest to tak piękne jak Ci się wydawało. Widzisz jak odbywa się sprzedaż niewolników, jakiś głośny Sir Tomash właśnie kogoś kupił. Próbujesz to ignorować i iść dalej. Plotki kręcą się po całym mieście. Wpada Ci w ucho plotka o tak zwanym bazyliszku. Nigdy o czymś takim nie słyszałeś. 
+
+4.(3) Dom rzeźbiarza - Miejsce spotkania bazyliszka
+opis : Wychodzisz do pustego domu rzeźbiarza, podobno tutaj znajduje się leże bazyliszka. 
+
+5.(3) Arena - ulubione miejsce każdego hazardzisty, każdy śmiałek może przystąpić lub niefortunni skazańcy walczą o swoje życię przeciwko sobie lub zwierzętami.
+Opis : Jesteś na arenie. Tutaj każdy może się zapisać i walczyć o śmierć i życie za chwałę i pieniądze. Widzowie krzyczą z podekscytowania z każdym ciosem, wiedząc że jeden z nich będzie śmiertelny. 
+
+6.(3, 2) Karczma "Na pasach" - Ulubione miejsce lokalnych rolników, odpoczynek. Interesują Cię zamknięte drzwi do piwnicy, czujesz coś mrocznego dochodzącego z nich.
+Opis : Wchodzisz do pobliskiej karczmy, niedaleko miasta. Jest tu dość pusto, jedynie trio wieśniaków pijących w kącie oraz rolnik zapijający smutki przy ladie. W samym tyle znajdują się drzwi które wydają się jakby nie pasowały tutaj. 
+
+Farma jakiegoś fajnego gościa - ciężka robota wynagrodzi każdego 
+
+2.(2, 3, 6, 7, 8, 10) Las tysiącletni - las gigantycznych drzew i różnych stworzeń. Nie jest to najbezpieczniejsze miejsce, ulubiony spot łowców i wojowników szukających akcji.
+Opis : Jesteś w tysiącletnim lesie. Wokół Ciebie są tylko gigantyczne drzewa, większe od niektórych wierzy. Słyszysz dalekie odgłosy życia w lesie, znasz to miejsce, jednak łatwo się tutaj zgubić. Trzymaj się drogi jeśli Ci życie miłe.
+Schodzenie z drogi może Cię zaprowadzić w miejsca nigdy niewidziane przez ludzi.
+
+
+7.(2, 8, 9) Ruiny starej wieży - mówi się że spaliła ją Chimera, jednak nie widziano czegoś takiego tutaj od stuleci. Zwykle tutaj grasują szkielety dawnych podwładych.
+Opis: W głebi lasu znajdujesz starą wieże. Słyszałeś o niej w legendach i plotkach od ludzi z obozu. Mówi się że spaliła ją chimera, ale to było setki lat temu. Wieża nie jest wysoka, górne poziomy są zawalone, jednak kilka poziomów nadal można zwiedzić. Dolne poziomy są nadal stabilne, nie wiadomo jak głeboko idą. Uważaj na szkielety dawnych rycerzy.
+
+8.(2, 8) Studnia bez końca - podobno idzie do głębi ziemi, wiadomo tylko że niższe poziomy są tak gorące że spalą Cie do kości (Potrzebny jest jakiś napój ochładzający by przeżyć w głębiach), bazyliszek moze?
+Opis : Niedalego wieży widzisz dużą studnie. Musiała dostarczać strażnikom wody. Widać że od dawna nie była używana. Patrząc na nią bliżej, zauważasz wajchę. Ciągnąc za nią, pokazują się schody prowadzące w głębię studni. Mówi się że prowadzi do środka ziemi, ludzie którzy wędrowali w głebi wracają z poparzeniami gorszymi niż od smoka. Przygotuj się.
+
+9.(7) Labirynt - Legendarny labirynt minotaura, na każdym zakręcie spotykasz kości poprzednich nieszczęśników.
+Opis : Idąc głębiej w dolne poziomy wierzy spadasz przez podłogę. Jesteś w labiryncie. Sciany wokół Ciebie wydają się masywne, niezniszczalne. Na każdym rogu widzisz szczątki poprzednich nieszczęśników którzy tutaj trafili. Ciarki Cię przechodzą gdy myślisz co może grasować w labiryntach. Legendy głoszą o minotaurze. Mówi się że minotaur jest niepokonany, gdy Cię zobaczy, jesteś martwy. Znajdź wyjście i przygotuj się na cokolwiek możesz tutaj napotkać.
+
+10.(2, 13) Bagna - Typowe bagna pełne brudnych zwierząt walczących o jedenie, w głebi mieszka wiedźma do której chodzą chorzy po lekarstwa, jednak plotki są że zabija tych co jej się nie podobają.
+Opis : Jesteś na bagnach. Gęsta mgła sprawia że trudno cokolwiek zobaczyć, a błoto spowalnia każdy Twój ruch. Bagna to niebezpieczne miejsce, uważaj na czające się w wodzie gady. Gdzieś w głebi tych terenów mieszka wiedźma. Mapa Ci mówi że niedalego stąd jest karczma.
+
+11.(13, 12) Smocze góry - wysokie progi kryją w sobie różne stworzenia, jaskinie oraz twierdze. Główny teren smoków/wywern. Niewiele z nich opuszcza swoje wysokie tereny, jednak jaja takich stworzeń przynoszą chwałę i złoto. Szyty jednak są zabójczo zimne, trzeba przyjść przygotowanym.
+Opis : Droga w góry jest długa i trudna, ciężki wiatr ze śniegiem ograniczają Twoją wizję. W tych górach żyją potężne stwory czychające w jaskiniach. Najbezpieczniejszą opcją jest trzymanie się ścieżki. Mówi się że na samym szczycie znajduje się gniazdo smoków. Nawet jedno jajo można sprzedać za fortunę a smocze szczątki można przerobić na potężne przedmioty.
+
+12.(11) Ruiny zamku Karad - Znajdujące się na krańcu krainy, wiele nadal nie wie co się tutaj stało. Odkąd pewne stworzenie zniszczyło cały zamek w jedną noc, nikt nie ważył się podejść blisko ruin. 
+Opis : U stóp szmoczych gór stoją ruiny zamku Karad. Legenda głosi że Karad był potężnym królestwem, nikt nie był mu równy. Pewnej nocy jedno stworzenie zniszczyło wszystko co nosiło nazwę Karad. Do dziś nikt nie smiał postawić nogi w tych ruinach. Nie wiadomo co tutaj może grasować.
+
+13.(10, 11, 14) Karczma "7.5 Drwali" - Popularna lokacja, znana ze swojego piwa i mocno zrzytej społeczności, negatywnie reagują na obcych jednak.
+Opis : Po wyjściu z bagien widzisz górski krajobraz. Smocze góry są niedaleko stąd. Po drodze widzisz karczmę. Karczma tętni życiem, ludzie się bawią i piją. Jednak czujesz na sobie wzrok nienawiści. Karczmasz Cię ostrzega że ludzie tutaj nie są zbyt przyjaźni dla obcych.
+
+14.(13) Wieś przybłędów - Mała wioska mająca problem z tutejszymi potworami które wybijają im bydle. Potworem okazuje się
+Opis: Wchodzisz do małej wsi. Rolnicy wydają się przysmutni i widać że coś jest nie tak. Pytasz się jednego z nich czy coś jest nie tak. "Coś jest nie tak? Wszystko jest nie tak! To cholerne coś nie daje nam spokoju! Bydło ginie każdego dnia, w tym tępie na następny miesiąc to my będziemy porywani! Widać że masz oręż, przydaj się na coś i wybij to coś." 
+
+15.(13) Wnętrze góry "Wybierz nazwe" - ta niepozorna góra kryła w sobie gigantyczne jaskinie wypełnione pięknymi kryształami, kryje w sobie jednak niebezpieczne sworzenia. W samej głębi kryje się łoże chimery.
+Opis:  Wchodzisz do jaskini. Ta niepozorna góra kryje w sobie cudowne jaskinie. Otaczają Cię piękne kryształy pulsujące mocą której nie możesz określić. Echo rozprzeztrzenia się przez jaskinie, czujesz że jest tutaj coś potężnego. 
+
+16.(13, 11) Cmentarz miliona dusz - Trudno to nazwać cmentarzem, jest to pole po bitwie dawnych królestw, gdziekolwiek postawisz nogę, czujesz kości i oręż poległych tu wojowników. 
+Opis : Jesteś na cmentarzu. Jedyne co widzisz to nie kończące się nagrobki ludzi którzy zgineli setki lat temu. Mówi się że dwa królestwa stoczyły tutaj walkę, której zakończenia nikt nie wie. Niektórzy spekulują że walka była tak krwawa że oba królestwa się wybiły, inni myślą że coś innego, potężniejszego zniszczyło armie. Uważaj na dusze wojowników, nadal chodzące po tej ziemi, szukających zemsty.
+
+
+
+
+
+
+
+
+
+
