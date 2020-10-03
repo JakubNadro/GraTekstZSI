@@ -28,7 +28,13 @@ Co chcesz zrobić?
 
 (2.1) Udało ci się... Uciekłeś przed wielką grupą bandytów ale straciłeś cały swój doczesny ekwipunek prócz tarczy i miecza. Niedaleko znajduje się jakiś obóz... zdaje się, że opuszczony. Jeżeli ci się poszczęści może jest to właśnie obóz bandytów.
 2.1.1 Idź w stronę odkrytego nowo obozu.
-2.1.2 Idź dalej w głąb lasu tysiącletniego.
+2.1.2 Idź dalej w stronę lasu tysiącletniego.
+
+(2.1.1) Powoli zakradasz się w stronę nowo odkrytego obozu. W środku jest tylko trzech bandytów oraz kilka klatek z niewolnikami więc nie powinno być problemu z przejęciem go.
+2.1.1.1 Wbiegasz do obozu i podejmujesz walkę z bandytami znajdującymi się w środku.
+2.1.1.2 Obchodzisz cały oboz w celu sprawdzenia czy nie ma więcej bandytów wokoło.
+
+
 
 (2.2)Pierwszych dwóch bandytów wziąłes z zaskoczenia i przeciąłeś ich za pomocą miecza bez większych problemów.... Nagle otoczyło cię dziesięciu z nich.
 2.2.1 Spróbuj swoich sił przeciwko bandytom.
