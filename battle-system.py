@@ -1,6 +1,5 @@
 import random as r
 
-
 class Weapon:
     name = "Broń"
     damage = 0
@@ -23,24 +22,33 @@ class Monster:
     defense = 0
     damage = 0
     hp = 100
+    exp = 10
     name = "Potwór"
     entry_msg = "Spotykasz potwora " + name
     lose_msg = "Przegrywasz z potworem " + name
     win_msg = "Wygrywasz z potworem " + name
 
-    def __init__(self, attack, defense, dmg, hp, name, entry_msg):
+    def __init__(self, attack, defense, dmg, hp, exp, name, entry_msg, lose_msg, win_msg):
         self.attack = attack
         self.defense = defense
         self.damage = dmg
         self.hp = hp
+        self.exp = exp
         self.name = name
         self.entry_msg = entry_msg
+        self.lose_msg = lose_msg
+        self.win_msg = win_msg
 
 
 class Player:
-    base_hp = 100
+    base_hp = 50
     defense = 0.8
+    points = 0
     weapon = Weapon("Hand", 5, 1.0)
+
+    def pickup_weapon(self, new_weapon: Weapon):
+        self.weapon = new_weapon
+        print("Podniosłeś broń " + new_weapon.name)
 
     def calc_max_damage(self, opponent: Monster):
         return self.weapon.damage * opponent.defense
@@ -69,5 +77,7 @@ class Player:
             player_hp -= mon_dmg_mod * max_mon_dmg
             monster_moves += 1
 
-        return player_moves >= monster_moves
-
+        result = player_moves >= monster_moves
+        if result:
+            self.points += self.weapon.luck * monster.exp
+        return result
