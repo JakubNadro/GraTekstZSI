@@ -1,0 +1,121 @@
+Witaj, wybierz swoją klasę i rozpocznij przygodę.
+Klasa: 
+Wojownik - walczy bronią białą jednoręczną/półtoraręczną i tarczą lub bronią dwuręczną. Słynie z ciężkich i średnich pancerzy które w lepszym lub gorszym stopniu chronią jego ciało przed niebezpiecznymi atakami bestii, potworów jak i ludzi. Głównie przekonuje ludzi za pomocą siły gdy mają inne zdanie.
+Mag - walczy za pomocą magii którą tworzy za pomocą dłoni lub magicznego kostura. Jego ubiór skupia się na zaklętych elementach ubioru z których czerpie moc do walki czy perswazji. Bije od niego różnoraką wiedzą co przekłada się na bezproblemowe debaty z innymi intelektualistami.
+Łotrzyk - Walczy za pomocą łuku, sztyletów oraz różnorakich pułapek. Jego ubiór słynie z lekkich pancerzy które umożliwiają mu większą mobilność podczas walki. Ma bardzo wysoką charyzmę dzięki czemu przekonuje prawie każdego do swojej racji. Nie lubi się dzielić swoim łupem.
+
+Wojownik: Obudziłeś się w namiocie... Czujesz lekki powiew świeżego powietrza który dostaje się do twojego namiotu przez szczeliny między materiałem, a śledziami. Obok leży pochwa w której umieszczony jest twój miecz, a tarcza znajduje się obok niego. Nie wyspałeś się za bardzo leżąc w swoim zelaznym pancerzu.
+Co chcesz zrobić?
+1. Podnieś się z posłania oraz przygotuj się do dalszej drogi.
+2. Spróbuj zasnąć nie przejmując się czymkolwiek wokół.
+
+(1)Podniosłeś się lekko ociężały, sięgnąłeś po swoje przedmioty, po czym zabrałeś się za zwijanie obozowiska. Po kilkunastu minutach byłeś już gotowy do drogi. Zostało ci już tylko zjeść wczorajszy posiłek i ruszyc w dalszą drogę.
+1.1 Zjedz posiłek i rusz w dalszą drogę przez las.
+1.2 Nie jedz posiłku i rusz w dalszą drogę przez las.
+
+(2)Udało ci się zasnąć.... Budzi cię po kilku godzinach krzyk, grupy bandytów która znalazła twoje obozowisko. Nie masz nic innego do wyboru jak ucieczka przed nimi ze swoją bronią.
+2.1 Sięgnij po broń oraz tarczę i jak najszybciej spróbuj im uciec.
+2.2 Sięgnij po broń oraz tarczę i spróbuj stawić czoła bandytom.
+
+(1.1) Idąc przez las możesz zauważyć małą grupkę bandytów którzy stoją przy trakcie i rabują jednego z kupców.
+1.1.1 Spróbuj się do nich zakraść i zaatakować z ukrycia zaczynając od bandytów przy kupcu.
+1.1.2 Spróbuj się do nich zakraść i zaatakować z ukrycia jednego z bandytów znajdujących się nieco dalej przed wozem kupca.
+1.1.3 Wyskocz z krzaków i zacznij biec w stronę bandytów.
+
+(1.2) Idąc przez las mogłeś zauważyć na trakcie wędrowca który prosi cię o posiłek.
+1.2.1 Daj swój wczorajszy posiłek mężczyźnie.
+1.2.2 Zagróź mężczyźnie i spróbuj go okraść.
+
+(2.1) Udało ci się... Uciekłeś przed wielką grupą bandytów ale straciłeś cały swój doczesny ekwipunek prócz tarczy i miecza. Niedaleko znajduje się jakiś obóz... zdaje się, że opuszczony. Jeżeli ci się poszczęści może jest to właśnie obóz bandytów.
+2.1.1 Idź w stronę odkrytego nowo obozu.
+2.1.2 Idź dalej w głąb lasu tysiącletniego.
+
+(2.2)Pierwszych dwóch bandytów wziąłes z zaskoczenia i przeciąłeś ich za pomocą miecza bez większych problemów.... Nagle otoczyło cię dziesięciu z nich.
+2.2.1 Spróbuj swoich sił przeciwko bandytom.
+2.2.2 Rzuć broń na ziemię i poddaj się.
+
+(1.1.1) Powoli zakradasz się do bandytów przy kupcu... Gdy jesteś już na dość blisko wyciągasz miecz i w moment szlachtujesz obu z nich. Podbiega ostatni z bandytów znajdujący się nieco dalej.
+1.1.1.1 Zasłoń kupca sobą i przyjmij postawę bojową.
+1.1.1.2 Wybiegnij w stronę bandyty i zaatakuj go.
+
+(1.1.1.1) Bandyta uderza toporem o twoją tarczę, przez co odsłonił swój bok w który szybko pchnąłeś miecz. Bandyta padł na glebę, a jego krew pokryła twoje ciało jak i kupca.
+1.1.1.1.1 Schowaj miecz do pochwy i porozmawiaj z kupcem.
+1.1.1.1.2 Przystaw miecz do gardła kupca i spróbuj go okraść.
+1.1.1.1.3 Schowaj miecz do pochwy i udaj się dalej w strone tysiącletniego lasu.
+
+(1.1.2) Zakradłeś się do bandyty nieopodal wozu i zabiłeś go za pomocą miecza. Dwójka bandytów obok wozu zauważyła cię i pchnęli ostrze w brzuch kupca, po czym rzucili go na ziemię.
+1.1.2.1 Wbiegnij w stronę bandytów i zaatakuj ich.
+1.1.2.2 Przyjmij postawę bojową i czekaj na atak bandytów.
+
+(1.1.1.2) Pobiegłeś w strone bandyty i zasłoniłeś jego atak tarczą. Siła z którą uderzyła była na tyle mocna by powalić cię na ziemię. Upuściłeś tarczę, a bandyta bierze kolejny zamach by z toba skończyć.
+1.1.1.2.1 Spróbuj zablokować cios za pomocą miecza.
+1.1.1.2.2 Wbij miecz w jedną z nóg bandyty.
+1.1.1.2.3 Spróbuj sięgnąć tarczę i zablokować cios.
+
+(2.2.1) Stawiając czoła bandytom zaatakowałeś jednego z nich. Reszta gdy tylko się nia ciebie rzuciła zaszlachtowała cię w mgnieniu oka. Nie żyjesz przez swoją głupotę.
+(1.1.1.2.1) Wystawiłeś miecz z próbą zablokowania ciosu bandyty. Niestety nie miałeś na dość dużo siły by go zablokować, przez co bandyta wbił topór w twoją klatkę. Mężczyzna zabiera twój miecz i idzie w stronę kupca, po czym jednym pchnięciem miecza zabija go. Jesteś jeszcze przez moment świadomy całej sytuacji, po czym powoli umierasz, a twoje ciało zostaje przeszukane przez twojego mordercę.
+(1.1.1.2.3) Obróciłeś się po tarczę i gdy tylko ją sięgnąłeś... poczułeś przeszywający ból na wysokości kręgosłupa. Czujesz jak bandyta wyciąga z ciebie topór i idzie w stronę kupca by również go zabić. Jesteś jeszcze przez moment świadomy i widzisz jak bandyta uderza toporem w głowę kupca. Po chwili umierasz, a twoje ciało zostało ograbione przez twojego mordercę.
+(1.1.3) Bandyci gdy tylko ciebie zauważyli, zabili kupca i rzucili się we dwóch na ciebie. Pokonałes dwójkę z nich... Trzeci z bandytów zakradł się do ciebie od tyłu i wbił topór bojowy w twoją głowę. Padłes na glebę, a twoje ciało zostało ograbione przez twojego mordercę.
+
+(1.1.1.1.1) Kupiec dziękuje ci za uratowanie jego życia, po czym wręcza ci podarunek. Znajdujesz w nim nowy stalowy miecz z głowicą w kształcie kruka, mieszek złota oraz dwa bochenki chleba.
+1.1.1.1.1.1 Podziękuj kupcowi za przedmioty i rusz w stronę Tysiącletniego lasu.
+1.1.1.1.1.2 Wyciągnij miecz z pochwy i zabij kupca, po czym rusz w stronę Tysiącletniego lasu.
+
+(1.1.1.1.2) Wystraszyłeś kupca który błagał cię byś go nie okradał... Ty żądny pieniedzy oraz jego ekwipunku ograbiłeś go ze wszystkich kosztowności. Zabrałeś ze sobą kilka mieszków złota, całą jego biżuterię oraz miecz stalowy.
+1.1.1.1.2.1 Zabij kupca i udaj się w stronę Tysiącletniego lasu.
+1.1.1.1.2.2 Zostaw kupca i udaj się w stronę Tysiącletniego lasu.
+1.1.1.1.2.3 Zwiąż kupca i udaj się w stronę Tysiącletniego lasu.
+
+(1.2.1) Podczas podawania posiłku nieznajomemu, chwycił cię on za dłoń i coś wymamrotał, a po chwili.... znikł. Nie wiesz co się stało ale czujesz się najedzony oraz wypoczety.
+1.2.1.1 Rusz w stronę Tysiącletniego lasu.
+
+(1.2.2) Gdy tylko wyciągasz broń, nieznajomy zrzuca z siebie szaty, a jego dłonie nagle zaczęły płonąć. Krzyknął nieznane ci słowa i gdy miałeś już go zaatakować twój miecz przez niego przeniknął, a sam nieznajomy znikł. Czujesz jakby ręce ci płoneły.
+1.2.2.1 Zignoruj ból i spróbuj ruszyć w stronę Tysiącletniego lasu.
+1.2.2.2 Zdejmij pancerz z rąk i wskocz do pobliskiej rzeki.
+1.2.2.3 Wskocz do pobliskiej rzeki w pancerzu.
+
+(1.2.2.1) Przeszedłeś parę kroków, po czym padłeś na ziemie cały się paląc. Umierasz w agonii.
+
+(1.2.2.2) Szybko ściągnąłeś pancerz i rzuciłeś się do rzeki... słyszysz dźwięk gotowanej się wody gdy tylko znalazłeś się po szyję w wodzie. Po chwili ból ustaje, a na twoich rękach jest wypalone kilka słów w nieznanym ci języku.
+1.2.2.2.1 Wróć na brzeg, zabierz swoje przedmioty i udaj się w stronę Tysiącletniego lasu.
+
+(1.2.2.3) Biegnąc w stronę rzeki czujesz jak pancerz wtapia ci się w skórę. Gdy tylko zanurzyłes się w niej do szyi słyszysz dźwięk gotującej się wody. Po chwili płomienie znikają, jednakże pancerz przywarł ci do skóry.
+1.2.2.3.1 Wyjdź na brzeg, zgarnij resztę ekwipunku i udaj się w stronę Tysiącletniego lasu.
+
+(2.2.2) Po poddaniu się grupa bandytów ograbiła cię z twoich przedmiotów i zabrała w formie niewolnika na sprzedaż do obozu Wojowników niedaleko Tysiącletniego lasu.
+2.2.2.1 Idź z bandytami w stronę obozu.
+
+(2.2.2.1) Po całodziennej wędrówce zostałeś doprowadzony na targ niewolników znajdujący się w obozie wojowników. Zostałeś sprzedany niejakiemu Sir Thomash'owi który posiada własną przystań. Twoje nowe zadanie to pomoc w porcie.
+2.2.2.1.1 Zostań posłusznym niewolnikiem i służ do końca swoich dni Sir Thomash'owi.
+2.2.2.1.2 Poczekaj do zmierzchu.
+
+(2.2.2.1.1) Zaakceptowałeś swój los i zacząłeś wiernie służyć Sir Thomash'owi. Po dziesięciu latach zostałeś jego woźnicą.... Pewnego dnia Sir Thomash rozkazał ci zawieźć go do jego ulubionej karczmy "Na Pasach" znajdującej się po drugiej stronie miasta. Przy karczmie gdy miałeś się już zatrzymać zapatrzyłeś się na jedną z niewiast przez co nie zauważyłeś ślepej staruszki który wyszła pod twoje konie. Usłyszałes tylko krzyk, po czym szybko się odwróciłeś w kierunku dźwięku. Gdy zszedłeś z powozu zauważyłeś ciało staruszki zdeptanej przez konie. Gdy zauważył to twój Pan, wysłano cię na stryczek.
+
+(2.2.2.1.2) Gdy doczekałeś do północy postanowiłeś wyrwać się z obecnej już okropnej dla ciebie sytuacji. Wiesz dobrze, że będziesz teraz poszukiwany ale nie interesuje cię to gdy w grę wchodzi twoja wolność. Wstajesz powoli z posłania znajdującego się w stodole i ruszasz w kierunku drzwi. Nagle słyszysz strażnika znajdującego się za drzwiami idącego w twoim kierunku.
+2.2.2.1.2.1 Schowaj się za ścianą i czekaj na to by strażnik wszedł do pomieszczenia
+2.2.2.1.2.2 Połóż się na posłaniu i udawaj, że śpisz
+
+(2.2.2.1.2.1) Schowałeś się za ścianą i czekasz aż strażnik wejdzie do środku. Po chwili słyszysz dźwięk odsuwającego się zamka.
+2.2.2.1.2.1.1 Czekasz, aż strażnik wejdzie, po czym gdy tylko to możliwe próbujesz go udusić
+2.2.2.1.2.1.2 Gdy strażnik przejdzie przez drzwi szybko prześlizgujesz się obok niego i biegniesz w stronę wyjścia.
+
+(2.2.2.1.2.1.1) Zachodzisz od tyłu strażnika i zaczynasz go dusić. Po chwili strażnik pada martwy na ziemię.
+2.2.2.1.2.1.1.1 Ograb strażnika z jego przedmiotów takich jak broń, pancerz czy klucze.
+2.2.2.1.2.1.1.2 Zabierz strażnikowi tylko klucze i zacznij uciekać do wyjścia.
+2.2.2.1.2.1.1.3 Ograb strażnika i podpal stodołę za pomocą pochodni.
+
+(2.2.2.1.2.1.1.1) Pancerz jest na ciebie trochę przyduży więc postanawiasz go nie ubierać. Broń i klucze zabierasz ze sobą i udajesz się w stronę wyjścia. 
+2.2.2.1.2.1.1.1.1 Zabierz jednego z koni i odjedź w stronę Tysiącletniego lasu.
+2.2.2.1.2.1.1.1.2 Ucieknij na nogach w stronę Tysiącletniego lasu.
+
+(2.2.2.1.2.1.1.2) Zabierasz ze sobą tylko klucze i szybko uciekasz ze stodoły.
+2.2.2.1.2.1.1.2.1 Zabierz jednego z koni i odjedź w stronę Tysiącletniego lasu.
+2.2.2.1.2.1.1.2.2 Ucieknij na nogach w stronę Tysiącletniego lasu.
+
+(2.2.2.1.2.1.1.3) Po ograbieniu strażnika zauważasz, że jego pancerz jest na ciebie za duży i postanawiasz go nie ubierać. Zabierasz ze sobą miecz oraz klucze i szybko wybiegasz ze stodoły. Przed budynkiem znajduje się pochodnia oświetlająca droge przed budynkiem. Sięgasz po pochodnie i podkładasz ogien pod stodołę. Spłoszyłes przez to wszystkie konie więc nie zostało ci nic innego jak ucieczka na nogach w stronę Tysiącletniego lasu.
+2.2.2.1.2.1.1.3.1 Ucieknij na nogach w stronę Tysiącletniego lasu.
+
+(2.2.2.1.2.1.2) Udało ci się przeslizgnąć obok strażnika niezauważenie. Biegniesz szybko w stronę Tysiącletniego lasu.
+ 
+(2.2.2.1.2.2) Kładziesz się na posłaniu i zacznasz udawać, że śpisz. Po krótkiej chwili gdy strażnik się od ciebie odwraca, wstajesz i zaczynasz go dusić... Pochodnia którą chwycił chwilę przed śmiercią upada i podapala stodołę.
+2.2.2.1.2.2.1 Wybiegnij ze stodoły i uciekaj w stronę Tysiącletniego lasu
