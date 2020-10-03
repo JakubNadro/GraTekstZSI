@@ -26,7 +26,7 @@ class Monster:
     exp = 10
     name = "Potwór"
     entry_msg = "Spotykasz potwora " + name
-    run_msg = "Próbujesz uciec z walkis od potwora " + name
+    run_msg = "Próbujesz uciec z walki z potworem " + name
     lose_msg = "Przegrywasz z potworem " + name
     win_msg = "Wygrywasz z potworem " + name
 
@@ -45,6 +45,7 @@ class Monster:
 
 class Player:
     base_hp = 50
+    curr_hp = base_hp
     defense = 0.8
     points = 0
     weapon = Weapon("Hand", 5, 1.0)
@@ -84,3 +85,49 @@ class Player:
         if result:
             self.points += self.weapon.luck * monster.exp
         return result
+
+    @staticmethod
+    def print_monster_meet_options():
+        print("Co robisz?")
+        print("1) Zaczynasz walkę")
+        print("2) Chcesz jej uniknąć")
+
+    def try_to_run(self, monster: Monster) -> bool:
+        print(monster.run_msg)
+        if r.randint(0, 1) == 1:
+            # Nie udało się uciec
+            print("Udało ci się uciec!")
+            if r.randint(0, 1) == 1:
+                received_dmg = r.randint(1, self.curr_hp // 2)
+                self.curr_hp -= received_dmg
+                print("Niestety, otrzymujesz obrażenia w ilości", str(received_dmg), " i masz teraz", str(self.curr_hp),
+                      "HP!")
+            else:
+                print("Na szczęście nie otrzymujesz żadnych obrażeń!")
+            return True
+        else:
+            print("Ucieczka nie powiodła się!")
+            return False
+
+    def start_fight(self, monster: Monster):
+        print("Rozpoczynasz walkę z " + monster.name)
+        result = self.fight_with(monster)
+        if result:
+            print(monster.win_msg)
+            return True
+        else:
+            print(monster.lose_msg)
+            return False
+
+    def on_monster_meet(self, monster: Monster) -> bool:
+        print(monster.entry_msg)
+        self.print_monster_meet_options()
+        choice = int(input())
+        if choice == 1:
+            return self.start_fight(monster)
+        elif self.try_to_run(monster):
+            # TODO: Cofnij do poprzedniej lokalizacji
+            print("Wracasz do lokalizacji ...")
+            return True
+        else:
+            return self.start_fight(monster)

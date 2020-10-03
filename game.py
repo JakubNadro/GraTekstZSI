@@ -18,9 +18,4 @@ class Location:
         self.id_dst = id_dst
 
 
-class GameManager:
-    monsters = []
-
-    def start(self):
-        print("Rozmoczynam grę...")
-        # STARTUJEMY Z SYSTEMU TOMASZA DO PORUSZANIA
+Location(1, "Start", "Idź na start", None, "Jesteś na starcie", [2, 3]), Location(2, "Start", "Idź do lasu", None, "Jesteś w lesie", [1, 3, 4])
