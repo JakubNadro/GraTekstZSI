@@ -31,8 +31,7 @@ class Monster:
     lose_msg = "Przegrywasz z potworem " + name
     win_msg = "Wygrywasz z potworem " + name
 
-    def __init__(self, attack, defense, dmg, hp, exp, name, entry_msg, lose_msg, win_msg, run_msg):
-        self.attack = attack
+    def __init__(self, defense, dmg, hp, exp, name, entry_msg, lose_msg, win_msg, run_msg):
         self.defense = defense
         self.damage = dmg
         self.hp = hp
@@ -135,6 +134,7 @@ class Player:
 
             if prev_loc is not None:
                 print("Wracasz do lokalizacji", prev_loc.name)
+
             else:
                 print("Nie masz gdzie uciec!")
                 return False
