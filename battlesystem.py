@@ -1,5 +1,6 @@
 import random as r
-
+from locationsystem import *
+from game import *
 
 class Weapon:
     name = "Broń"
@@ -54,6 +55,10 @@ class Player:
         self.weapon = new_weapon
         print("Podniosłeś broń " + new_weapon.name)
 
+    def regenerate_hp(self, amount: int):
+        self.curr_hp += max(0, amount)
+        self.curr_hp = min(self.base_hp, self.curr_hp)
+
     def calc_max_damage(self, opponent: Monster):
         return self.weapon.damage * opponent.defense
 
@@ -89,8 +94,9 @@ class Player:
     @staticmethod
     def print_monster_meet_options():
         print("Co robisz?")
-        print("1) Zaczynasz walkę")
+        print("1) Rozpoczynasz walkę")
         print("2) Chcesz jej uniknąć")
+        print("Wszystko inne) Rozpoczynasz walkę")
 
     def try_to_run(self, monster: Monster) -> bool:
         print(monster.run_msg)
@@ -123,11 +129,15 @@ class Player:
         print(monster.entry_msg)
         self.print_monster_meet_options()
         choice = int(input())
-        if choice == 1:
-            return self.start_fight(monster)
-        elif self.try_to_run(monster):
-            # TODO: Cofnij do poprzedniej lokalizacji
-            print("Wracasz do lokalizacji ...")
+
+        if choice == 2 and self.try_to_run(monster):
+            prev_loc = get_previous_location()
+
+            if prev_loc is not None:
+                print("Wracasz do lokalizacji", prev_loc.name)
+            else:
+                print("Nie masz gdzie uciec!")
+                return False
             return True
         else:
             return self.start_fight(monster)
