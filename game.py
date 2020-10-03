@@ -1,4 +1,4 @@
-from battlesystem import *
+from gra.battlesystem import *
 
 
 class Location:
@@ -16,3 +16,11 @@ class Location:
         self.monster = monster
         self.entry_msg = entry_msg
         self.id_dst = id_dst
+
+
+class GameManager:
+    monsters = []
+
+    def start(self):
+        print("Rozmoczynam grę...")
+        # STARTUJEMY Z SYSTEMU TOMASZA DO PORUSZANIA

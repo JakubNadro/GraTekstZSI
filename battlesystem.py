@@ -1,6 +1,7 @@
 import random as r
-from locationsystem import *
-from game import *
+from gra.locationsystem import *
+from gra.game import *
+
 
 class Weapon:
     name = "Broń"
