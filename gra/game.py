@@ -1,4 +1,6 @@
-from battlesystem import *
+import string
+
+from gra.battlesystem import *
 
 
 class Location:
@@ -9,7 +11,7 @@ class Location:
     entry_msg = "Jesteś w " + name
     id_dst = []
 
-    def __init__(self, id, name, go_msg, monster: Monster, entry_msg, id_dst):
+    def __init__(self, id: int, name: string, go_msg: string, monster: Monster, entry_msg: string, id_dst: list):
         self.id = id
         self.name = name
         self.go_msg = go_msg

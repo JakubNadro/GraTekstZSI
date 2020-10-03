@@ -1,6 +1,7 @@
 import random as r
-from locationsystem import *
-from game import *
+from gra.locationsystem import *
+from gra.game import *
+
 
 class Weapon:
     name = "Broń"
@@ -134,7 +135,6 @@ class Player:
 
             if prev_loc is not None:
                 print("Wracasz do lokalizacji", prev_loc.name)
-
             else:
                 print("Nie masz gdzie uciec!")
                 return False
