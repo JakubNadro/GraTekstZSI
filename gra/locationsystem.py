@@ -1,15 +1,16 @@
 from gra.game import Location, GameManager
-from gra.config import locations
 from gra.battlesystem import Monster
 from gra.ui import quit_game
 
-first_location = 1
 stack = [
     1
 ]
 
 
 def szukanie(droga):
+    # Fix circular inputs
+    from gra.config import locations
+
     for i in range(0, len(locations)):
         if locations[i]['id'] == droga:
             return locations[i]

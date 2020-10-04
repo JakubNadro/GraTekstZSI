@@ -9,13 +9,27 @@ def quit_game(game_mgr: GameManager):
 
 
 def game_help(game_mgr: GameManager):
-    print("Gracz:", game_mgr.player)
-    print(cmds)
+    print("--- Dostępne polecenia ---")
+    for cmd in cmds:
+        print(cmd, "-", cmds_desc[cmd])
+    print("--------------------------")
+
+def game_info(game_mgr):
+    print("--- Informacje o graczu ---\n")
+    print("HP:", game_mgr.player.curr_hp, " / ", game_mgr.player.base_hp, "\n")
+    print("Broń:", game_mgr.player.weapon, "\n")
 
 
 cmds = {
     "quit": quit_game,
     "help": game_help,
+    "info": game_info
+}
+
+cmds_desc = {
+    "help": "Wyświetla okienko pomocy",
+    "quit": "Zamyka grę",
+    "info": "Wyświetla informacje o graczu",
 }
 
 running: bool = True
