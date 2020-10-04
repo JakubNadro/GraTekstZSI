@@ -2,7 +2,6 @@ import random as r
 import string
 
 from gra.battlesystem import *
-from gra.locationsystem import get_previous_location
 
 
 class Location:
@@ -109,10 +108,14 @@ class Player:
         choice = int(input())
 
         if choice == 2 and self.try_to_run(monster):
+            # Fix circular inputs
+            from gra.locationsystem import get_previous_location, move
+
             prev_loc = get_previous_location()
 
             if prev_loc is not None:
                 print("Wracasz do lokalizacji", prev_loc.name)
+                move(prev_loc.id)
             else:
                 print("Nie masz gdzie uciec!")
                 return False
