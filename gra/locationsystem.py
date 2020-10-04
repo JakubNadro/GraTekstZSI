@@ -1,5 +1,5 @@
 from gra.game import Location
-from gra.gra import *
+from gra.config import locations
 
 first_location = 1
 stack = [
