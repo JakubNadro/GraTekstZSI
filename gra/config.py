@@ -109,9 +109,9 @@ locations = [
              [2, 3, 6, 7, 8, 10]),
     Location(3, "Miasto Kupne", "Idź do miasta kupnego", monsters[3],
              "Jesteś w mieście. Otaczają Cię ulice tętniące życiem, wydaje się niemal idealne. Kupce targują się, \n"
-             "rodziny spacerują i życie się toczy. Jednak szybko widzisz że jest to tak piękne jak Ci się wydawało. \n"
+             "rodziny spacerują i życie się toczy. Jednak szybko widzisz, że nie jest to tak piękne jak Ci się wydawało. \n"
              "Widzisz jak odbywa się sprzedaż niewolników, jakiś głośny Sir Tomash właśnie kogoś kupił. Próbujesz to \n"
-             "ignorować i iść dalej. Plotki kręcą się po całym mieście. Wpada Ci w ucho plotka o tak zwanym \n"
+             "ignorować i iść dalej. Plotki niosą się po całym mieście. Jedna z mich wpada Ci w ucho. Jest to plotka o tak zwanym \n"
              "bazyliszku. Nigdy o czymś takim nie słyszałeś.",
              [1, 2, 4, 5]),
     Location(4, "Dom Rzeźbiarza", "Wejdź do domu Rzeźbiarza", None,
@@ -125,11 +125,11 @@ locations = [
              [3]),
     Location(6, "Karczma 'Na Pasach'", None, None,
              "Wchodzisz do pobliskiej karczmy, niedaleko miasta. Jest tu dość pusto, jedynie trio wieśniaków pijących \n"
-             "w kącie oraz rolnik zapijający smutki przy ladie. W samym tyle znajdują się drzwi które wydają się \n"
-             "jakby nie pasowały tutaj.",
-             [3, 2]),
-    Location(17, "Lochy pod karczmą", None, None,
-             "Wchodzisz do tajemniczych drzwi. Schodzy prowadzą Cię do podziemnego lochu, wydają się o wiele starsze \n"
+             "w kącie oraz rolnik zapijający smutki przy ladzie. Na samym tyle znajdują się drzwi, które wydają się \n"
+             "jakby tutaj nie pasowały .",
+             [3, 2, 17]),
+    Location(17, "Otwórz drzwi", None, None,
+             "Wchodzisz do owych tajemniczych drzwi. Schodzy prowadzą Cię do podziemnego lochu, wydają się o wiele starsze \n"
              "od samej karczmy. Zimne, szare ściany sprawiają że cały loch czuje sie klaustrofobicznie. Czujesz jak \n"
              "oczy patrzą na Ciebie z każdej strony: Podłogi, ścian, nawet sufitu.\n",
              [6]),
