@@ -36,6 +36,7 @@ def move(player: Player, droga):
             possible_locations()
         else:
             from gra.ui import quit_game
+            print("\n\nPrzegrałeś! Better luck next time!\n\n")
             quit_game(None)
 
 
