@@ -25,11 +25,11 @@ class Location:
 
 
 class Player:
-    base_hp = 50
+    base_hp = 80
     curr_hp = base_hp
-    defense = 0.8
+    defense = 0.75
     points = 0
-    weapon = Weapon("Wirusowy Miecz (special power: szansa na zarażenie przeciwnika stojącego w promieniu 2m)", 25, 1.1)
+    weapon = Weapon("Wirusowy Miecz (special power: szansa na zarażenie przeciwnika stojącego w promieniu 2m)", 30, 1.1)
 
     def pickup_weapon(self, new_weapon: Weapon):
         self.weapon = new_weapon
@@ -104,6 +104,8 @@ class Player:
         if result:
             monster.defeated = True
             print(monster.win_msg)
+            print("HP:", round(self.curr_hp, 2), " / ", round(self.base_hp, 2))
+            print("Punkty:", round(self.points, 2))
             return True
         else:
             print(monster.lose_msg)

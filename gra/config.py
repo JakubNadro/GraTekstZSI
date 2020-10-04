@@ -17,7 +17,7 @@ monsters = [
     Monster(0.9,
             35,
             60,
-            12,
+            16,
             "Minotaur",
             "Czujesz odgłos kroków z korytarza przed tobą wychodzi humanoidalna postać z głową byka oraz wściekłymi \n"
             "czerwonymi oczami. Trzyma on topór, którym zaczyna wymachiwać w każdą stronę w celu zastraszenia",
@@ -30,7 +30,7 @@ monsters = [
     Monster(1,
             28,
             100,
-            40,
+            50,
             "Hydra",
             "Czujesz drżenie ziemi jak by było wywoływane prze ruch ogromnej istoty. Powoli przed tobą zaczynają \n"
             "się pojawiać wężowate głowy jedna po drugiej.",
@@ -139,7 +139,7 @@ locations = [
              "jednak kilka poziomów nadal można zwiedzić. Dolne poziomy są nadal stabilne, nie wiadomo jak głeboko \n"
              "idą. Uważaj na szkielety dawnych rycerzy.",
              [2, 8, 9]),
-    Location(8, "Labirynt", None, None,
+    Location(8, "Labirynt", "Wejdź do labiryntu", monsters[1],
              "Idąc głębiej w dolne poziomy wierzy spadasz przez podłogę. Jak widać nie były na tyle stabilne jak \n"
              "myślałeś. Jesteś w labiryncie, cały podziemny kompleks jest w kompletnej ciemności więc zapalasz \n"
              "pochodnię. Sciany wokół Ciebie wydają się masywne, niezniszczalne. Na każdym rogu widzisz szczątki \n"
@@ -161,7 +161,7 @@ locations = [
              "głębię studni. Mówi się że prowadzi do środka ziemi, ludzie którzy wędrowali w głebi wracają z \n"
              "poparzeniami gorszymi niż od smoka. Przygotuj się.",
              [2, 8]),
-    Location(10, "Bagna", None, None,
+    Location(10, "Bagna", "Idź na bagna", monsters[2],
              "Jesteś na bagnach. Gęsta mgła sprawia że trudno cokolwiek zobaczyć, a błoto spowalnia każdy Twój ruch. \n"
              "Bagna to niebezpieczne miejsce, uważaj na czające się w wodzie gady. Gdzieś w głebi tych terenów \n"
              "mieszka wiedźma o której wieśniacy mówią. Mapa Ci mówi że niedalego stąd jest też karczma.", []),
