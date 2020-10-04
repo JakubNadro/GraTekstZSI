@@ -128,7 +128,7 @@ locations = [
              "w kącie oraz rolnik zapijający smutki przy ladzie. Na samym tyle znajdują się drzwi, które wydają się \n"
              "jakby tutaj nie pasowały .",
              [3, 2, 17]),
-    Location(17, "Otwórz drzwi", None, None,
+    Location(17, "Tajemnicze drzwi", None, None,
              "Wchodzisz do owych tajemniczych drzwi. Schodzy prowadzą Cię do podziemnego lochu, wydają się o wiele starsze \n"
              "od samej karczmy. Zimne, szare ściany sprawiają że cały loch czuje sie klaustrofobicznie. Czujesz jak \n"
              "oczy patrzą na Ciebie z każdej strony: Podłogi, ścian, nawet sufitu.\n",
