@@ -2,9 +2,9 @@ from gra.game import Location, Monster
 
 monsters = [
     Monster(0.3,
-            20,
-            80,
-            34,
+            6,
+            50,
+            340,
             "Drzewiec",
             "Będąc zmęczonym siadasz na leżącym drzewie  i wbijasz w nie miecz . Czujesz że twoja prowizoryczne \n"
             "siedzenie zaczyna się podnosić. Odskakujesz od niego jak oparzony by ujrzeć starego drzewca \n",
