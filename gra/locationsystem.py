@@ -1,4 +1,6 @@
-from gra.game import Location
+from gra.game import Location, GameManager
+from gra.battlesystem import Monster
+from gra.ui import quit_game
 
 stack = [
     1
@@ -26,5 +28,15 @@ def get_previous_location() -> Location:
     return prev_location
 
 
-def move(droga):
-    print(get_curr_location().entry_msg)
+def move(game_mgr: GameManager, droga):
+    stack.append(droga)
+    currloc = get_curr_location()
+    print(currloc.entry_msg)
+    if currloc.monster != None:
+        enemy = Monster
+        print(enemy.entry_msg)
+        is_alive = game_mgr.player.on_monster_meet(currloc.monster)
+        if is_alive == True:
+            print("Brawo!!! Pokonałeś potwora \n" + currloc.go_msg)
+        else:
+            quit_game(game_mgr)
