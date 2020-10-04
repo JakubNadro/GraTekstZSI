@@ -10,9 +10,11 @@ if __name__ == '__main__':
 
     from gra.locationsystem import possible_locations, get_curr_location
     # Welcome message
-    print("Witaj kozackiej grze fantasy! Aby zobaczyć dostępne polecenia wppisz 'help'. Poruszaj się między lokacjami\n"
+    print("Witaj w kozackiej grze fantasy! Aby zobaczyć dostępne polecenia wppisz 'help'. Poruszaj się między lokacjami\n"
           "Uzywając liczb odpowiadających numerowi lokalizacji, które będą wyświetlone poniżej. Walcz z potworami\n"
           "i zdobywaj doświadczenie.\n\n")
+    from gra.ui import game_info
+    game_info(game_mgr)
     # First level info
     print(get_curr_location().entry_msg)
     possible_locations()
