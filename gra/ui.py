@@ -14,10 +14,13 @@ def game_help(game_mgr: GameManager):
         print(cmd, "-", cmds_desc[cmd])
     print("--------------------------")
 
+
 def game_info(game_mgr):
-    print("--- Informacje o graczu ---\n")
-    print("HP:", game_mgr.player.curr_hp, " / ", game_mgr.player.base_hp, "\n")
-    print("Broń:", game_mgr.player.weapon, "\n")
+    print("--- Informacje o graczu ---")
+    print("HP:", game_mgr.player.curr_hp, " / ", game_mgr.player.base_hp)
+    print("Broń:", game_mgr.player.weapon)
+    print("---------------------------")
+
 
 
 cmds = {

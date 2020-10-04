@@ -6,7 +6,7 @@ locations = [
              "tematy. Możesz tutaj spokojnie odpocząć przed następną wyprawą w nieznane.",
              [2, 3]),
     Location(2, "Las tysiącletni", "Idź do tysiącletniego lasu", None,
-             "Jesteś w tysiącletnim lesie. Wokół Ciebie są tylko gigantyczne drzewa, większe od niektórych wieży. "
+             "Jesteś w tysiącletnim lesie. Wokół Ciebie są tylko gigantyczne drzewa, większe od niektórych wieży."
              "Słyszysz dalekie odgłosy życia w lesie, znasz to miejsce, jednak łatwo się tutaj zgubić. Trzymaj się "
              "drogi jeśli Ci życie miłe. Schodzenie z drogi może Cię zaprowadzić w miejsca nigdy niewidziane przez "
              "ludzi.",
@@ -68,7 +68,7 @@ locations = [
     Location(10, "Bagna", None, None,
              "Jesteś na bagnach. Gęsta mgła sprawia że trudno cokolwiek zobaczyć, a błoto spowalnia każdy Twój ruch. "
              "Bagna to niebezpieczne miejsce, uważaj na czające się w wodzie gady. Gdzieś w głebi tych terenów "
-             "mieszka wiedźma o której wieśniacy mówią. Mapa Ci mówi że niedalego stąd jest też karczma."),
+             "mieszka wiedźma o której wieśniacy mówią. Mapa Ci mówi że niedalego stąd jest też karczma.", []),
     Location(20, "Przed chatą wiedźmy", None, None,
              "Idąc głębiej w bagna widzisz małą drewnianą chatę. Jest dość porośnięta przez rośliny, jednak nie "
              "wygląda na opuszczoną. Podejrzewasz że to musi być chata wiedźmy o której mówili wieśniacy, jednak nie "
@@ -139,7 +139,7 @@ monsters = [
             "Walka skończyła się szybko przez swoją ignorancje i nie wiedzę dorobiłeś  potworowi kilka dodatkowych "
             "głów a sam skończyłeś rozszarpany i pożarty.",
             "Po ciężkiej walce udało ci się wygrać a potwór leż martwy trawiony przez jedyną broń skuteczną przeciw "
-            "niemu - ogień. "
+            "niemu - ogień. ",
             "Ucieczka nie była zbyt trudna ze względu na masę i szybkość stwora, jedynym problemem był zasięg jego "
             "ataku."),
     # Oj tak +1 dla ciebie byq

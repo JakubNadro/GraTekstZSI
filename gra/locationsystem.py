@@ -1,6 +1,5 @@
 from gra.game import Location, GameManager
 from gra.battlesystem import Monster
-from gra.ui import quit_game
 
 stack = [
     1
@@ -12,20 +11,20 @@ def szukanie(droga):
     from gra.config import locations
 
     for i in range(0, len(locations)):
-        if locations[i]['id'] == droga:
+        if locations[i].id == droga:
             return locations[i]
 
 
 def get_curr_location() -> Location:
-    return szukanie(stack.top())
+    return szukanie(stack[len(stack) - 1])
 
 
 def get_previous_location() -> Location:
-    curr_location = stack.top()
-    stack.pop()
-    prev_location = szukanie(stack.top())
-    stack.append(curr_location)
-    return prev_location
+    index = len(stack) - 2
+    # Nie chcemy wyjsc na ujemne indexy
+    if index < 0:
+        return None
+    return szukanie(stack[index])
 
 
 def move(game_mgr: GameManager, droga):
@@ -39,4 +38,6 @@ def move(game_mgr: GameManager, droga):
         if is_alive == True:
             print("Brawo!!! Pokonałeś potwora \n" + currloc.go_msg)
         else:
+            from gra.ui import quit_game
+
             quit_game(game_mgr)
