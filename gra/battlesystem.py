@@ -8,6 +8,9 @@ class Weapon:
         self.damage = dmg
         self.luck = luck
 
+    def __str__(self):
+        return "{0} (dmg: {1}, luck: {2})".format(self.name, self.damage, self.luck)
+
 
 # class MonsterAttack:
 #     damage_modifier = 0

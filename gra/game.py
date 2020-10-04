@@ -33,8 +33,11 @@ class Player:
         print("Podniosłeś broń " + new_weapon.name)
 
     def regenerate_hp(self, amount: int):
+        if amount == 0:
+            return
         self.curr_hp += max(0, amount)
         self.curr_hp = min(self.base_hp, self.curr_hp)
+        print("Zregenerowałeś {0} HP! Twoje obecne zdrowie: {1}/{2}".format(amount, self.curr_hp, self.base_hp))
 
     def calc_max_damage(self, opponent: Monster):
         return self.weapon.damage * opponent.defense
@@ -48,22 +51,23 @@ class Player:
         max_mon_dmg = monster.damage * self.defense
         # Max player attack damage
         max_player_dmg = self.calc_max_damage(monster)
-        player_hp = self.base_hp
         monster_hp = monster.hp
 
         player_moves = 0
         monster_moves = 0
-        while player_hp > 0:
+        while monster_hp > 0:
+            # print("Monster_HP:", monster_hp)
             player_dmg_mod = min(r.random() + 0.5, 1.0)
             monster_hp -= player_dmg_mod * max_player_dmg
             player_moves += 1
 
-        while monster_hp > 0:
+        while self.curr_hp > 0:
+            # print("Player_HP:", self.curr_hp)
             mon_dmg_mod = min(r.random() + 0.3, 1.0)
-            player_hp -= mon_dmg_mod * max_mon_dmg
+            self.curr_hp -= mon_dmg_mod * max_mon_dmg
             monster_moves += 1
 
-        result = player_moves >= monster_moves
+        result = player_moves <= monster_moves
         if result:
             self.points += self.weapon.luck * monster.exp
         return result
@@ -93,8 +97,9 @@ class Player:
             return False
 
     def start_fight(self, monster: Monster):
-        print("Rozpoczynasz walkę z " + monster.name)
+        print("Rozpoczynasz walkę z", monster.name)
         result = self.fight_with(monster)
+        # print("Result:", result)
         if result:
             print(monster.win_msg)
             return True

@@ -18,6 +18,7 @@ def game_help(game_mgr: GameManager):
 def game_info(game_mgr):
     print("--- Informacje o graczu ---")
     print("HP:", game_mgr.player.curr_hp, " / ", game_mgr.player.base_hp)
+    print("Punkty:", game_mgr.player.points)
     print("Broń:", game_mgr.player.weapon)
     print("---------------------------")
 
@@ -45,6 +46,9 @@ def main_loop(game_mgr):
         if cmd in cmds:
             cmds[cmd](game_mgr)
         elif cmd.isnumeric():
+            import random as r
+            missing_hp = game_mgr.player.base_hp - game_mgr.player.curr_hp
+            game_mgr.player.regenerate_hp(r.randint(0, missing_hp // 2))
             move(game_mgr, int(cmd))
             print("Move to", cmd)
         else:
