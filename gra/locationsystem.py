@@ -31,11 +31,10 @@ def move(game_mgr: GameManager, droga):
     stack.append(droga)
     currloc = get_curr_location()
     print(currloc.entry_msg)
+
     if currloc.monster != None:
-        enemy = Monster
-        print(enemy.entry_msg)
         is_alive = game_mgr.player.on_monster_meet(currloc.monster)
-        if is_alive == True:
+        if is_alive:
             print("Brawo!!! Pokonałeś potwora \n" + currloc.go_msg)
             possible_locations()
         else:
@@ -43,15 +42,12 @@ def move(game_mgr: GameManager, droga):
 
             quit_game(game_mgr)
 
-def possible_locations():
 
+def possible_locations():
+    print("Lokalizacja:", get_curr_location().name)
     from gra.config import locations
 
     curr_possibs = get_curr_location().id_dst
-    for i in curr_possibs:
-        if locations[i].id == curr_possibs:
-            print(i + ")" + locations[i].go_msg)
-
-def cant_go(droga):
-    if droga not in get_curr_location().id_dst:
-        print("To miejsce jest za daleko")
+    for i in range(0, len(locations)):
+        if locations[i].id in curr_possibs:
+            print(str(locations[i].id) + ")", locations[i].go_msg)

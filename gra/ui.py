@@ -1,5 +1,5 @@
 from gra.game import GameManager
-from gra.locationsystem import move, get_curr_location
+from gra.locationsystem import move, get_curr_location, possible_locations
 
 
 def quit_game(game_mgr: GameManager):
@@ -17,8 +17,8 @@ def game_help(game_mgr: GameManager):
 
 def game_info(game_mgr):
     print("--- Informacje o graczu ---")
-    print("HP:", game_mgr.player.curr_hp, " / ", game_mgr.player.base_hp)
-    print("Punkty:", game_mgr.player.points)
+    print("HP:", round(game_mgr.player.curr_hp, 2), " / ", round(game_mgr.player.base_hp, 2))
+    print("Punkty:", round(game_mgr.player.points, 2))
     print("Broń:", game_mgr.player.weapon)
     print("---------------------------")
 
@@ -31,7 +31,7 @@ cmds = {
     "quit": quit_game,
     "help": game_help,
     "info": game_info,
-    "pwd": game_pwd()
+    "pwd": game_pwd
 }
 
 cmds_desc = {
@@ -55,7 +55,7 @@ def main_loop(game_mgr):
 
             if cmd not in get_curr_location().id_dst:
                 print("To miejsce jest za daleko!")
-                # TODO: print ten teges
+                possible_locations()
                 continue
 
             import random as r

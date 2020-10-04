@@ -115,7 +115,7 @@ locations = [
              "bazyliszku. Nigdy o czymś takim nie słyszałeś.",
              [1, 2, 4, 5]),
     Location(4, "Dom Rzeźbiarza", "Wejdź do domu Rzeźbiarza", None,
-             "Wychodzisz do pustego domu rzeźbiarza, podobno tutaj znajduje się leże bazyliszka. Widzisz rzeźby ludzi \n"
+             "Wychodzisz do pustego domu rzeźbiarza, podobno tutaj znajduje się leże bazyliszka. Widzisz rzeźby ludzi\n"
              "i stworzeń, są one przerażająco realistyczne.",
              [3]),
     Location(5, "Arena", "Wejdź na Arenę", None,

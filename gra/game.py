@@ -26,7 +26,7 @@ class Player:
     curr_hp = base_hp
     defense = 0.8
     points = 0
-    weapon = Weapon("Hand", 5, 1.0)
+    weapon = Weapon("Wirusowy Miecz (special power: szansa na zarażenie przeciwnika stojącego w promieniu 2m)", 25, 1.1)
 
     def pickup_weapon(self, new_weapon: Weapon):
         self.weapon = new_weapon
@@ -53,21 +53,17 @@ class Player:
         max_player_dmg = self.calc_max_damage(monster)
         monster_hp = monster.hp
 
-        player_moves = 0
-        monster_moves = 0
-        while monster_hp > 0:
+        moves = 0
+
+        while self.curr_hp > 0 and monster_hp > 0:
+            mon_dmg_mod = min(r.random() + 0.3, 1.0)
+            self.curr_hp -= mon_dmg_mod * max_mon_dmg
             # print("Monster_HP:", monster_hp)
             player_dmg_mod = min(r.random() + 0.5, 1.0)
             monster_hp -= player_dmg_mod * max_player_dmg
-            player_moves += 1
+            moves += 1
 
-        while self.curr_hp > 0:
-            # print("Player_HP:", self.curr_hp)
-            mon_dmg_mod = min(r.random() + 0.3, 1.0)
-            self.curr_hp -= mon_dmg_mod * max_mon_dmg
-            monster_moves += 1
-
-        result = player_moves <= monster_moves
+        result = self.curr_hp > monster_hp
         if result:
             self.points += self.weapon.luck * monster.exp
         return result
