@@ -40,7 +40,8 @@ class Player:
             return
         self.curr_hp += max(0, amount)
         self.curr_hp = min(self.base_hp, self.curr_hp)
-        print("Zregenerowałeś {0} HP! Twoje obecne zdrowie: {1}/{2}".format(amount, self.curr_hp, self.base_hp))
+        print("Zregenerowałeś {0} HP! Twoje obecne zdrowie: {1}/{2}".format(amount, round(self.curr_hp, 2),
+                                                                            round(self.base_hp, 2)))
 
     def calc_max_damage(self, opponent: Monster):
         return self.weapon.damage * opponent.defense
@@ -79,27 +80,29 @@ class Player:
         print("Wszystko inne) Rozpoczynasz walkę")
 
     def try_to_run(self, monster: Monster) -> bool:
-        print(monster.run_msg)
+        print("Walka:", monster.run_msg)
         if r.randint(0, 1) == 1:
             # Nie udało się uciec
-            print("Udało ci się uciec!")
+            print("Walka: Udało ci się uciec!")
             if r.randint(0, 1) == 1:
                 received_dmg = r.randint(1, self.curr_hp // 2)
                 self.curr_hp -= received_dmg
-                print("Niestety, otrzymujesz obrażenia w ilości", str(received_dmg), " i masz teraz", str(self.curr_hp),
+                print("Walka: Niestety, otrzymujesz obrażenia w ilości", str(received_dmg), "i masz teraz",
+                      str(self.curr_hp),
                       "HP!")
             else:
-                print("Na szczęście nie otrzymujesz żadnych obrażeń!")
+                print("Walka: Na szczęście nie otrzymujesz żadnych obrażeń!")
             return True
         else:
-            print("Ucieczka nie powiodła się!")
+            print("Walka: Ucieczka nie powiodła się!")
             return False
 
     def start_fight(self, monster: Monster):
-        print("Rozpoczynasz walkę z", monster.name)
+        print("Walka: Rozpoczynasz walkę z", monster.name)
         result = self.fight_with(monster)
         # print("Result:", result)
         if result:
+            monster.defeated = True
             print(monster.win_msg)
             return True
         else:
@@ -118,10 +121,10 @@ class Player:
             prev_loc = get_previous_location()
 
             if prev_loc is not None:
-                print("Wracasz do lokalizacji", prev_loc.name)
+                print("Walka: Wracasz do lokalizacji", prev_loc.name)
                 move(self, prev_loc.id)
             else:
-                print("Nie masz gdzie uciec!")
+                print("Walka: Nie masz gdzie uciec!")
                 return False
             return True
         else:

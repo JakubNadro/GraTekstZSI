@@ -40,3 +40,4 @@ class Monster:
         self.lose_msg = lose_msg
         self.win_msg = win_msg
         self.run_msg = run_msg
+        self.defeated = False

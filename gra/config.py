@@ -88,8 +88,8 @@ monsters = [
             20,
             -200,
             "Starsza Pani",
-            "Wchodzisz do karczmy. W ciemnym barze w garze nagle piwo drży. Czy to tyranozaur? Czy to burza grzmi?\n"
-            "Twoim oczom ukazuje się potężna starsza Pani. Cr?",
+            "Niespodziewanie zza ciemnego baru, z hukiem wyskakuje Starsza Pani. W garze nagle piwo drży. Czy to\n"
+            "tyranozaur? Czy to burza grzmi? Nie! To potężna właścicielka karczmy.\n",
             "Ojej, UwU OwO przegrałeś :)",
             "Bez problemu zdejmujesz Starszą Panią na strzała, co spotyka się z niezadowoleniem wśród pozostałych\n"
             "biesiadników, przez co tracisz -200 exp\n",
@@ -123,7 +123,7 @@ locations = [
              "Widzowie krzyczą z podekscytowania z każdym ciosem, wiedząc że jeden z nich będzie śmiertelny. \n"
              "Niektórzy krzyczą z bólu, hazardziści którzy właśnie przegrali duże sumy pieniędzy.\n",
              [3]),
-    Location(6, "Karczma 'Na Pasach'", None, None,
+    Location(6, "Karczma 'Na Pasach'", None, monsters[6],
              "Wchodzisz do pobliskiej karczmy, niedaleko miasta. Jest tu dość pusto, jedynie trio wieśniaków pijących \n"
              "w kącie oraz rolnik zapijający smutki przy ladzie. Na samym tyle znajdują się drzwi, które wydają się \n"
              "jakby tutaj nie pasowały .",

@@ -30,7 +30,7 @@ def move(player: Player, droga):
     stack.append(droga)
     currloc = get_curr_location()
 
-    if currloc.monster != None:
+    if currloc.monster != None and not currloc.monster.defeated:
         is_alive = player.on_monster_meet(currloc.monster)
         if is_alive:
             possible_locations()
@@ -40,7 +40,7 @@ def move(player: Player, droga):
 
 
 def possible_locations():
-    print("Lokalizacja:", get_curr_location().name)
+    print("\nLokalizacja:", get_curr_location().name)
     from gra.config import locations
 
     curr_possibs = get_curr_location().id_dst
