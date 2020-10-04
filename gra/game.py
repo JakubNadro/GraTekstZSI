@@ -15,7 +15,10 @@ class Location:
     def __init__(self, id: int, name: string, go_msg: string, monster: Monster, entry_msg: string, id_dst: list):
         self.id = id
         self.name = name
-        self.go_msg = go_msg
+        if go_msg is None:
+            self.go_msg = "Idź do " + self.name
+        else:
+            self.go_msg = go_msg
         self.monster = monster
         self.entry_msg = entry_msg
         self.id_dst = id_dst
@@ -106,7 +109,7 @@ class Player:
     def on_monster_meet(self, monster: Monster) -> bool:
         print(monster.entry_msg)
         self.print_monster_meet_options()
-        choice = int(input())
+        choice = int(input("Walka:"))
 
         if choice == 2 and self.try_to_run(monster):
             # Fix circular inputs
@@ -116,7 +119,7 @@ class Player:
 
             if prev_loc is not None:
                 print("Wracasz do lokalizacji", prev_loc.name)
-                move(prev_loc.id)
+                move(self, prev_loc.id)
             else:
                 print("Nie masz gdzie uciec!")
                 return False

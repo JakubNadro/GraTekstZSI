@@ -2,7 +2,7 @@ from gra.game import GameManager
 from gra.locationsystem import move, get_curr_location, possible_locations
 
 
-def quit_game(game_mgr: GameManager):
+def quit_game(game_mgr: None):
     global running
     running = False
     print("Zamykanie gry...")
@@ -61,7 +61,7 @@ def main_loop(game_mgr):
             import random as r
             missing_hp = game_mgr.player.base_hp - game_mgr.player.curr_hp
             game_mgr.player.regenerate_hp(r.randint(0, missing_hp // 2))
-            move(game_mgr, cmd)
+            move(game_mgr.player, cmd)
             # print("Move to", cmd)
         else:
             print("Command not found. Use 'help' to show help.")
