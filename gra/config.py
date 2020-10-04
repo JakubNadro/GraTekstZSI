@@ -6,13 +6,13 @@ monsters = [
             50,
             340,
             "Drzewiec",
-            "Będąc zmęczonym siadasz na leżącym drzewie  i wbijasz w nie miecz . Czujesz że twoja prowizoryczne \n"
+            "Będąc zmęczonym siadasz na leżącym drzewie  i wbijasz w nie miecz. Czujesz że twoja prowizoryczne \n"
             "siedzenie zaczyna się podnosić. Odskakujesz od niego jak oparzony by ujrzeć starego drzewca \n",
             "Nie udało ci się pokonać rozgniewanego drzewca ten jednak postanowił zostawić twój osąd naturze po czym \n"
-            "znika zostawiając ciebie rannego . Będąc na skraju przytomności widzisz zbliżające się do ciebie wilki i \n"
+            "znika zostawiając ciebie rannego. Będąc na skraju przytomności widzisz zbliżające się do ciebie wilki i \n"
             "niedźwiedzie ",
-            "Udaje ci się wywalczyć  wolność u strażnika lasu .",
-            "Próbujesz przekonać go że jest  ci przykro ,.drzewiec wierzy ci i wypuszcza cię wolno ale pozostawia ci \n"
+            "Udaje ci się wywalczyć  wolność u strażnika lasu.",
+            "Próbujesz przekonać go że jest  ci przykro. Drzewiec wierzy ci i puszcza cię wolno ale pozostawia cię z \n"
             "blizną na plecach."),
     Monster(0.9,
             35,
@@ -20,7 +20,7 @@ monsters = [
             12,
             "Minotaur",
             "Czujesz odgłos kroków z korytarza przed tobą wychodzi humanoidalna postać z głową byka oraz wściekłymi \n"
-            "czerwonymi oczami. trzyma on topór którym zaczyna wymachiwać  w każdą stronę w celu zastraszenia",
+            "czerwonymi oczami. Trzyma on topór, którym zaczyna wymachiwać w każdą stronę w celu zastraszenia",
             "Walka była długim pokazem siły między wami i żaden nie chciał się poddać lecz po długiej walce nie \n"
             "miałeś już sił więc potwór zadał ci szybką i bez bolesną śmierć na znak szacunku.",
             "Walka była długim pokazem siły między wami i żaden nie chciał się poddać lecz po długiej walce potwór w \n"
@@ -32,11 +32,11 @@ monsters = [
             100,
             40,
             "Hydra",
-            "Czujesz drżenie ziemi jak by było wywoływane prze ruch ogromnej istoty . Po woli przed tobą zaczynają \n"
+            "Czujesz drżenie ziemi jak by było wywoływane prze ruch ogromnej istoty. Powoli przed tobą zaczynają \n"
             "się pojawiać wężowate głowy jedna po drugiej.",
-            "Walka skończyła się szybko przez swoją ignorancje i nie wiedzę dorobiłeś  potworowi kilka dodatkowych \n"
+            "Walka skończyła się szybko przez swoją ignorancje i niewiedzę dorobiłeś potworowi kilka dodatkowych \n"
             "głów a sam skończyłeś rozszarpany i pożarty.",
-            "Po ciężkiej walce udało ci się wygrać a potwór leż martwy trawiony przez jedyną broń skuteczną przeciw \n"
+            "Po ciężkiej walce udało ci się wygrać a potwór leży martwy trafiony przez jedyną broń skuteczną przeciw \n"
             "niemu - ogień. ",
             "Ucieczka nie była zbyt trudna ze względu na masę i szybkość stwora, jedynym problemem był zasięg jego \n"
             "ataku."),
@@ -48,10 +48,10 @@ monsters = [
             "Czerwony duch",
             "Widzisz biegnącego mężczyznę gonionego przez średniej wielkości potwora przypominającego prześwitującego \n"
             "czerwonego byka z ogniem buchającym z nozdrzy",
-            "Próbujesz odciągnąć byka jednak w momencie gdy próbujesz go złapiać za rogi przechodzi przez ciebie prąd.\n",
-            "Postanowiłeś pomóc kiedy  byk miał już zabić mężczyznę oblewasz go  za pomocą wiadra wody stojącego obok \n"
+            "Próbujesz odciągnąć byka jednak w momencie, gdy próbujesz go złapiać za rogi przechodzi przez ciebie prąd.\n",
+            "Postanowiłeś pomóc, kiedy byk miał już zabić mężczyznę oblewasz wiadrem wody stojącym obok \n"
             "zmoczony duch zaczyna uciekać.",
-            "Ignorujesz potwora wiedząc iż nie atakuje ludzi z byle jakich powodów , ten człowiek musiał sobie na to \n"
+            "Ignorujesz potwora wiedząc iż nie atakuje ludzi z byle jakich powodów, ten człowiek musiał sobie na to \n"
             "zasłużyć"),
 
     Monster(0.7,
@@ -59,13 +59,13 @@ monsters = [
             78,
             40,
             "Mantikora",
-            "Zaglądasz do jaskini w jej wnętrzu jest słychać lwi ryk kiedy próbujesz wyostrzyć wzrok obok twojej \n"
+            "Zaglądasz do jaskini. W jej wnętrzu słychać lwi ryk. Kiedy próbujesz wyostrzyć wzrok obok twojej \n"
             "głowy przelatuje ogon skorpiona ",
-            "Walka była długa jesteś zmęczony  potwór dostrzega twoją słabość i wykorzystuje lecąc i przygniatająca \n"
+            "Walka była długa jesteś zmęczony, potwór dostrzega twoją słabość i wykorzystuje lecąc i przygniatająca \n"
             "twoje ciała po czym odgryza ci głowę.",
             "Walka była długa jesteś zmęczony ale tego nie pokazujesz , widząc swój koniec mantikora wbija swój ogon \n"
             "w kark i po umiera",
-            "zacząłeś uciekać  , jesteś już przy samym wyjściu nagle czujesz bul w okolicy żołądka patrzysz w dół a \n"
+            "zacząłeś uciekać, jesteś już przy samym wyjściu nagle czujesz ból w okolicy żołądka patrzysz w dół a \n"
             "tam wystaje z ciebie kolec skorpiona.\n"),
 
     Monster(1.5,
@@ -108,7 +108,7 @@ locations = [
              "ludzi.",
              [2, 3, 6, 7, 8, 10]),
     Location(3, "Miasto Kupne", "Idź do miasta kupnego", monsters[3],
-             "Jesteś w mieście. Otaczają Cię ulice tętniące życiem, wydaje się niemal idealne. Kupce targują się, \n"
+             "Jesteś w mieście. Otaczają Cię ulice tętniące życiem, wydaje się niemal idealne. Kupcy targują się, \n"
              "rodziny spacerują i życie się toczy. Jednak szybko widzisz, że nie jest to tak piękne jak Ci się wydawało. \n"
              "Widzisz jak odbywa się sprzedaż niewolników, jakiś głośny Sir Tomash właśnie kogoś kupił. Próbujesz to \n"
              "ignorować i iść dalej. Plotki niosą się po całym mieście. Jedna z mich wpada Ci w ucho. Jest to plotka o tak zwanym \n"
