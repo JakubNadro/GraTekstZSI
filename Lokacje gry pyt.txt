@@ -1,0 +1,45 @@
+Location(id, name, go_msg, monster, entry_msg, id_dst)
+
+Location(10, "as", "siema cos", None, "Witaj w zamku", [1, 2, 3])
+
+Location(1, "Obóz Wojowników", none, "Jesteś w Obozie wojowników. Wokół siebie widzisz ludzi uzbrojonych po zęby rozmawiających na różne tematy. Możesz tutaj spokojnie odpocząć przed następną wyprawą w nieznane.", [2, 3])
+
+Location(2, "Las tysiącletni", none, "Jesteś w tysiącletnim lesie. Wokół Ciebie są tylko gigantyczne drzewa, większe od niektórych wieży. Słyszysz dalekie odgłosy życia w lesie, znasz to miejsce, jednak łatwo się tutaj zgubić. Trzymaj się drogi jeśli Ci życie miłe.
+Schodzenie z drogi może Cię zaprowadzić w miejsca nigdy niewidziane przez ludzi.", [2, 3, 6, 7, 8, 10])
+
+Location(3, "Miasto Kupne", none, "Jesteś w mieście. Otaczają Cię ulice tętniące życiem, wydaje się niemal idealne. Kupce targują się, rodziny spacerują i życie się toczy. Jednak szybko widzisz że jest to tak piękne jak Ci się wydawało. Widzisz jak odbywa się sprzedaż niewolników, jakiś głośny Sir Tomash właśnie kogoś kupił. Próbujesz to ignorować i iść dalej. Plotki kręcą się po całym mieście. Wpada Ci w ucho plotka o tak zwanym bazyliszku. Nigdy o czymś takim nie słyszałeś.", [1, 2, 4, 5])
+
+Location(4, "Dom Rzeźbiarza", none, "Wychodzisz do pustego domu rzeźbiarza, podobno tutaj znajduje się leże bazyliszka. Widzisz rzeźby ludzi i stworzeń, są one przerażająco realistyczne.", [3])
+
+Location(5, "Arena", none, "Jesteś na arenie. Tutaj każdy może się zapisać i walczyć o śmierć i życie za chwałę i pieniądze. Widzowie krzyczą z podekscytowania z każdym ciosem, wiedząc że jeden z nich będzie śmiertelny. Niektórzy krzyczą z bólu, hazardziści którzy właśnie przegrali duże sumy pieniędzy.", [3])
+
+Location(6, "Karczma 'Na Pasach'", none, "Wchodzisz do pobliskiej karczmy, niedaleko miasta. Jest tu dość pusto, jedynie trio wieśniaków pijących w kącie oraz rolnik zapijający smutki przy ladie. W samym tyle znajdują się drzwi które wydają się jakby nie pasowały tutaj." [3,2])
+
+Location(17, "Lochy pod karczmą", none, "Wchodzisz do tajemniczych drzwi. Schodzy prowadzą Cię do podziemnego lochu, wydają się o wiele starsze od samej karczmy. Zimne, szare ściany sprawiają że cały loch czuje sie klaustrofobicznie. Czujesz jak oczy patrzą na Ciebie z każdej strony: Podłogi, ścian, nawet sufitu.", [6])
+
+Location(7, "Ruiny starej wieży", none, "W głebi lasu znajdujesz starą wieże. Słyszałeś o niej w legendach i plotkach od ludzi z obozu. Mówi się że spaliła ją chimera, ale to było setki lat temu. Wieża nie jest wysoka, górne poziomy są zawalone, jednak kilka poziomów nadal można zwiedzić. Dolne poziomy są nadal stabilne, nie wiadomo jak głeboko idą. Uważaj na szkielety dawnych rycerzy.", [2, 8, 9])
+
+Location(8, "Labirynt", none, "Idąc głębiej w dolne poziomy wierzy spadasz przez podłogę. Jak widać nie były na tyle stabilne jak myślałeś. Jesteś w labiryncie, cały podziemny kompleks jest w kompletnej ciemności więc zapalasz pochodnię. Sciany wokół Ciebie wydają się masywne, niezniszczalne. Na każdym rogu widzisz szczątki poprzednich nieszczęśników którzy tutaj trafili. Ciarki Cię przechodzą gdy myślisz co może grasować w labiryntach. Legendy głoszą o minotaurze. Mówi się że minotaur jest niepokonany, gdy Cię zobaczy, jesteś martwy. Znajdź wyjście i przygotuj się na cokolwiek możesz tutaj napotkać.", [7, 19, 18])
+
+Location(19, "Ślepa uliczka", none, "Przechodząc przez labirynt, trafiasz na ślepą uliczkę. Nie podoba Ci się to, słyszysz kroki zbliżające się coraz szybciej, musisz znaleźć wyjście.", [1, 18])
+
+Location(18, "Wyjście z labiryntu", none, "Biegniesz w stronę światła, dochodząc do wyjścia. Ledwo co uszedłeś z życiem. Nigdy nie byłeś tak szczęśliwy by zobaczyć znowu gigantyczne drzewa tysiącletniego lasu.", [2, 7, 8])
+
+Location(9, "Studnia bez końca", none, "Niedalego wieży widzisz dużą studnie. Musiała dostarczać strażnikom wody. Widać że od dawna nie była używana. Patrząc na nią bliżej, zauważasz wajchę. Ciągnąc za nią, pokazują się schody prowadzące w głębię studni. Mówi się że prowadzi do środka ziemi, ludzie którzy wędrowali w głebi wracają z poparzeniami gorszymi niż od smoka. Przygotuj się.", [2, 8])
+Location(10, "Bagna", none, "Jesteś na bagnach. Gęsta mgła sprawia że trudno cokolwiek zobaczyć, a błoto spowalnia każdy Twój ruch. Bagna to niebezpieczne miejsce, uważaj na czające się w wodzie gady. Gdzieś w głebi tych terenów mieszka wiedźma o której wieśniacy mówią. Mapa Ci mówi że niedalego stąd jest też karczma."
+
+Location(20, "Przed chatą wiedźmy", none, "Idąc głębiej w bagna widzisz małą drewnianą chatę. Jest dość porośnięta przez rośliny, jednak nie wygląda na opuszczoną. Podejrzewasz że to musi być chata wiedźmy o której mówili wieśniacy, jednak nie możesz być pewien. Nie wiele jest wiadomo o wiedźmach, ludzie do nich chodzą z chorobami jednak większość się ich boi. Mowią że zabija tych co uzna za nic nie wartych darmozjadów. Uważaj co mówisz.", [10, 21])
+
+Location(21, "Chata wiedźmy", none, "hehe baba z nosem dugiiii", [20])
+
+Location(13, "Karczma '7.5 Drala'", none, "Po wyjściu z bagien widzisz górski krajobraz. Smocze góry są niedaleko stąd. Po drodze widzisz karczmę. Karczma tętni życiem, ludzie się bawią i piją. Jednak czujesz na sobie wzrok nienawiści. Karczmasz Cię ostrzega że ludzie tutaj nie są zbyt przyjaźni dla obcych.", [10, 11, 14])
+
+Location(11, "Smocze góry", none, "Droga w góry jest długa i trudna, ciężki wiatr ze śniegiem ograniczają Twoją wizję. W tych górach żyją potężne stwory czychające w jaskiniach. Najbezpieczniejszą opcją jest trzymanie się ścieżki. Mówi się że na samym szczycie znajduje się gniazdo smoków. Nawet jedno jajo można sprzedać za fortunę a smocze szczątki można przerobić na potężne przedmioty.", [12, 13, 22, 23])
+
+Location(23, "Smoczy szczyt", none, "Legedny mówią o smokach, sile na tyle potężnej by zniszczyć zamek. Nie wiesz co Cię tu czeka, uważaj.", [11])
+
+Location(12, "Ruiny zamku Karad", none, "U stóp szmoczych gór stoją ruiny zamku Karad. Legenda głosi że Karad był potężnym królestwem, nikt nie był mu równy. Pewnej nocy jedno stworzenie zniszczyło wszystko co nosiło nazwę Karad. Do dziś nikt nie smiał postawić nogi w tych ruinach. Nie wiadomo co tutaj może grasować.", [11])
+
+Location (14, "Wieś przybłędów", none, "Wchodzisz do małej wsi. Rolnicy wydają się przysmutni i widać że coś jest nie tak. Pytasz się jednego z nich czy coś jest nie tak. "Coś jest nie tak? Wszystko jest nie tak! To cholerne coś nie daje nam spokoju! Bydło ginie każdego dnia, w tym tępie na następny miesiąc to my będziemy porywani! Widać że masz oręż, przydaj się na coś i wybij to coś."", [13, 15, 24])
+
+
