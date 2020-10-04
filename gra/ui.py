@@ -66,9 +66,10 @@ def main_loop(game_mgr):
             import random as r
             missing_hp = game_mgr.player.base_hp - game_mgr.player.curr_hp
 
-            print(szukanie(cmd).entry_msg)
+            curr_loc = szukanie(cmd)
+            print("======", curr_loc.name, "======")
+            print(curr_loc.entry_msg)
             game_mgr.player.regenerate_hp(r.randint(0, missing_hp // 2))
             move(game_mgr.player, cmd)
-            # print("Move to", cmd)
         else:
             print("Command not found. Use 'help' to show help.")

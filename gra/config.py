@@ -92,7 +92,7 @@ monsters = [
             "tyranozaur? Czy to burza grzmi? Nie! To potężna właścicielka karczmy.\n",
             "Ojej, UwU OwO przegrałeś :)",
             "Bez problemu zdejmujesz Starszą Panią na strzała, co spotyka się z niezadowoleniem wśród pozostałych\n"
-            "biesiadników, przez co tracisz -200 exp\n",
+            "biesiadników, przez co tracisz 200 pkt\n",
             "Widząc wyjątkowo dobrze zbudowaną starszą panią próbujesz się wycofać"),
 ]
 
