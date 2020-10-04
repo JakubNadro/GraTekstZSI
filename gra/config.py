@@ -1,17 +1,113 @@
 from gra.game import Location, Monster
 
+monsters = [
+    Monster(0.3,
+            20,
+            80,
+            34,
+            "Drzewiec",
+            "Będąc zmęczonym siadasz na leżącym drzewie  i wbijasz w nie miecz . Czujesz że twoja prowizoryczne \n"
+            "siedzenie zaczyna się podnosić. Odskakujesz od niego jak oparzony by ujrzeć starego drzewca \n",
+            "Nie udało ci się pokonać rozgniewanego drzewca ten jednak postanowił zostawić twój osąd naturze po czym \n"
+            "znika zostawiając ciebie rannego . Będąc na skraju przytomności widzisz zbliżające się do ciebie wilki i \n"
+            "niedźwiedzie ",
+            "Udaje ci się wywalczyć  wolność u strażnika lasu .",
+            "Próbujesz przekonać go że jest  ci przykro ,.drzewiec wierzy ci i wypuszcza cię wolno ale pozostawia ci \n"
+            "blizną na plecach."),
+    Monster(0.9,
+            35,
+            60,
+            12,
+            "Minotaur",
+            "Czujesz odgłos kroków z korytarza przed tobą wychodzi humanoidalna postać z głową byka oraz wściekłymi \n"
+            "czerwonymi oczami. trzyma on topór którym zaczyna wymachiwać  w każdą stronę w celu zastraszenia",
+            "Walka była długim pokazem siły między wami i żaden nie chciał się poddać lecz po długiej walce nie \n"
+            "miałeś już sił więc potwór zadał ci szybką i bez bolesną śmierć na znak szacunku.",
+            "Walka była długim pokazem siły między wami i żaden nie chciał się poddać lecz po długiej walce potwór w \n"
+            "końcu padł.",
+            ("Podczas próby ucieczki minotaur cię dogonił i zdjął ci głowę z ramion ",)),
+
+    Monster(1,
+            28,
+            100,
+            40,
+            "Hydra",
+            "Czujesz drżenie ziemi jak by było wywoływane prze ruch ogromnej istoty . Po woli przed tobą zaczynają \n"
+            "się pojawiać wężowate głowy jedna po drugiej.",
+            "Walka skończyła się szybko przez swoją ignorancje i nie wiedzę dorobiłeś  potworowi kilka dodatkowych \n"
+            "głów a sam skończyłeś rozszarpany i pożarty.",
+            "Po ciężkiej walce udało ci się wygrać a potwór leż martwy trawiony przez jedyną broń skuteczną przeciw \n"
+            "niemu - ogień. ",
+            "Ucieczka nie była zbyt trudna ze względu na masę i szybkość stwora, jedynym problemem był zasięg jego \n"
+            "ataku."),
+    # Oj tak +1 dla ciebie byq
+    Monster(0.5,
+            15,
+            75,
+            25,
+            "Czerwony duch",
+            "Widzisz biegnącego mężczyznę gonionego przez średniej wielkości potwora przypominającego prześwitującego \n"
+            "czerwonego byka z ogniem buchającym z nozdrzy",
+            "Próbujesz odciągnąć byka jednak w momencie gdy próbujesz go złapiać za rogi przechodzi przez ciebie prąd.\n",
+            "Postanowiłeś pomóc kiedy  byk miał już zabić mężczyznę oblewasz go  za pomocą wiadra wody stojącego obok \n"
+            "zmoczony duch zaczyna uciekać.",
+            "Ignorujesz potwora wiedząc iż nie atakuje ludzi z byle jakich powodów , ten człowiek musiał sobie na to \n"
+            "zasłużyć"),
+
+    Monster(0.7,
+            35,
+            78,
+            40,
+            "Mantikora",
+            "Zaglądasz do jaskini w jej wnętrzu jest słychać lwi ryk kiedy próbujesz wyostrzyć wzrok obok twojej \n"
+            "głowy przelatuje ogon skorpiona ",
+            "Walka była długa jesteś zmęczony  potwór dostrzega twoją słabość i wykorzystuje lecąc i przygniatająca \n"
+            "twoje ciała po czym odgryza ci głowę.",
+            "Walka była długa jesteś zmęczony ale tego nie pokazujesz , widząc swój koniec mantikora wbija swój ogon \n"
+            "w kark i po umiera",
+            "zacząłeś uciekać  , jesteś już przy samym wyjściu nagle czujesz bul w okolicy żołądka patrzysz w dół a \n"
+            "tam wystaje z ciebie kolec skorpiona.\n"),
+
+    Monster(1.5,
+            14,
+            30,
+            5,
+            "Szkielet",
+            "Idziesz sobie spokojnie kiedy nagle zaczął wiać wiatr który zaczął ujawniać ludzkie kości . Zaczynasz \n"
+            "się im przyglądać ,próbujesz podnosisz jedną z czaszek jak tylko zbliżasz rękę ta próbuję cię ugryźć \n"
+            "cofasz się o krok po czym  czujesz coś na swoim ramieniu ,pomału się odwracasz a tam stoi armia \n"
+            "szkieletów.",
+            " Nie mogąc wygrać z ich liczebnością zaczynasz uciekać będąc gonionym przez armię szkieletów .",
+            "Walka nie trwała długo ze względu na kruchość szkieletów szybko je rozpraszasz po czym miażdżysz ich \n"
+            "czaszki by już nigdy nie wstali",
+            "Widząc liczbę nie umarłych próbujesz się wycofać , widząc lukę w ich ustawieniu biegniesz przed siebie \n"
+            "ale niestety gubisz kilka przedmiotów."),
+
+    Monster(1,
+            2,
+            20,
+            -200,
+            "Starsza Pani",
+            "Wchodzisz do karczmy. W ciemnym barze w garze nagle piwo drży. Czy to tyranozaur? Czy to burza grzmi?\n"
+            "Twoim oczom ukazuje się potężna starsza Pani. Cr?",
+            "Ojej, UwU OwO przegrałeś :)",
+            "Bez problemu zdejmujesz Starszą Panią na strzała, co spotyka się z niezadowoleniem wśród pozostałych\n"
+            "biesiadników, przez co tracisz -200 exp\n",
+            "Widząc wyjątkowo dobrze zbudowaną starszą panią próbujesz się wycofać"),
+]
+
 locations = [
     Location(1, "Obóz Wojowników", "Idź do obozu wojowników", None,
              "Jesteś w Obozie wojowników. Wokół siebie widzisz ludzi uzbrojonych po zęby rozmawiających na różne \n"
              "tematy. Możesz tutaj spokojnie odpocząć przed następną wyprawą w nieznane.\n",
              [2, 3]),
-    Location(2, "Las tysiącletni", "Idź do tysiącletniego lasu", None,
+    Location(2, "Las tysiącletni", "Idź do tysiącletniego lasu", monsters[0],
              "Jesteś w tysiącletnim lesie. Wokół Ciebie są tylko gigantyczne drzewa, większe od niektórych wieży.\n"
              "Słyszysz dalekie odgłosy życia w lesie, znasz to miejsce, jednak łatwo się tutaj zgubić. Trzymaj się \n"
              "drogi jeśli Ci życie miłe. Schodzenie z drogi może Cię zaprowadzić w miejsca nigdy niewidziane przez \n"
              "ludzi.",
              [2, 3, 6, 7, 8, 10]),
-    Location(3, "Miasto Kupne", "Idź do miasta kupnego", None,
+    Location(3, "Miasto Kupne", "Idź do miasta kupnego", monsters[3],
              "Jesteś w mieście. Otaczają Cię ulice tętniące życiem, wydaje się niemal idealne. Kupce targują się, \n"
              "rodziny spacerują i życie się toczy. Jednak szybko widzisz że jest to tak piękne jak Ci się wydawało. \n"
              "Widzisz jak odbywa się sprzedaż niewolników, jakiś głośny Sir Tomash właśnie kogoś kupił. Próbujesz to \n"
@@ -101,94 +197,4 @@ locations = [
              "spokoju! Bydło ginie każdego dnia, w tym tępie na następny miesiąc to my będziemy porywani! Widać że \n"
              "masz oręż, przydaj się na coś i wybij to coś.\"",
              [13, 15, 24])
-]
-monsters = [
-    Monster(0.3,
-            20,
-            80,
-            34,
-            "Drzewiec",
-            "Będąc zmęczonym siadasz na leżącym drzewie  i wbijasz w nie miecz . Czujesz że twoja prowizoryczne \n"
-            "siedzenie zaczyna się podnosić. Odskakujesz od niego jak oparzony by ujrzeć starego drzewca \n",
-            "Nie udało ci się pokonać rozgniewanego drzewca ten jednak postanowił zostawić twój osąd naturze po czym \n"
-            "znika zostawiając ciebie rannego . Będąc na skraju przytomności widzisz zbliżające się do ciebie wilki i \n"
-            "niedźwiedzie ",
-            "Udaje ci się wywalczyć  wolność u strażnika lasu .",
-            "Próbujesz przekonać go że jest  ci przykro ,.drzewiec wierzy ci i wypuszcza cię wolno ale pozostawia ci \n"
-            "blizną na plecach."),
-    Monster(0.9,
-            35,
-            60,
-            12,
-            "Minotaur",
-            "Czujesz odgłos kroków z korytarza przed tobą wychodzi humanoidalna postać z głową byka oraz wściekłymi \n"
-            "czerwonymi oczami. trzyma on topór którym zaczyna wymachiwać  w każdą stronę w celu zastraszenia",
-            "Walka była długim pokazem siły między wami i żaden nie chciał się poddać lecz po długiej walce nie \n"
-            "miałeś już sił więc potwór zadał ci szybką i bez bolesną śmierć na znak szacunku.",
-            "Walka była długim pokazem siły między wami i żaden nie chciał się poddać lecz po długiej walce potwór w \n"
-            "końcu padł.",
-            ("Podczas próby ucieczki minotaur cię dogonił i zdjął ci głowę z ramion ",)),
-
-    Monster(1,
-            28,
-            100,
-            40,
-            "Hydra",
-            "Czujesz drżenie ziemi jak by było wywoływane prze ruch ogromnej istoty . Po woli przed tobą zaczynają \n"
-            "się pojawiać wężowate głowy jedna po drugiej.",
-            "Walka skończyła się szybko przez swoją ignorancje i nie wiedzę dorobiłeś  potworowi kilka dodatkowych \n"
-            "głów a sam skończyłeś rozszarpany i pożarty.",
-            "Po ciężkiej walce udało ci się wygrać a potwór leż martwy trawiony przez jedyną broń skuteczną przeciw \n"
-            "niemu - ogień. ",
-            "Ucieczka nie była zbyt trudna ze względu na masę i szybkość stwora, jedynym problemem był zasięg jego \n"
-            "ataku."),
-    # Oj tak +1 dla ciebie byq
-    Monster(0.5,
-            15,
-            75,
-            25,
-            "Czerwony duch",
-            "Widzisz biegnącego mężczyznę gonionego przez średniej wielkości potwora przypominającego prześwitującego \n"
-            "czerwonego byka z ogniem buchającym z nozdrzy",
-            "Próbujesz odciągnąć byka jednak w momencie gdy próbujesz go złapiać za rogi przechodzi przez ciebie prąd.\n",
-            "Postanowiłeś pomóc kiedy  byk miał już zabić mężczyznę oblewasz go  za pomocą wiadra wody stojącego obok \n"
-            "zmoczony duch zaczyna uciekać.",
-            "Ignorujesz potwora wiedząc iż nie atakuje ludzi z byle jakich powodów , ten człowiek musiał sobie na to \n"
-            "zasłużyć"),
-
-    Monster(0.7,
-            35,
-            78,
-            40,
-            "Mantikora",
-            "Zaglądasz do jaskini w jej wnętrzu jest słychać lwi ryk kiedy próbujesz wyostrzyć wzrok obok twojej \n"
-            "głowy przelatuje ogon skorpiona ",
-            "Walka była długa jesteś zmęczony  potwór dostrzega twoją słabość i wykorzystuje lecąc i przygniatająca \n"
-            "twoje ciała po czym odgryza ci głowę.",
-            "Walka była długa jesteś zmęczony ale tego nie pokazujesz , widząc swój koniec mantikora wbija swój ogon \n"
-            "w kark i po umiera",
-            "zacząłeś uciekać  , jesteś już przy samym wyjściu nagle czujesz bul w okolicy żołądka patrzysz w dół a \n"
-            "tam wystaje z ciebie kolec skorpiona.\n"),
-
-    Monster(1.5,
-            14,
-            30,
-            5,
-            "Szkielet",
-            "Idziesz sobie spokojnie kiedy nagle zaczął wiać wiatr który zaczął ujawniać ludzkie kości . Zaczynasz \n"
-            "się im przyglądać ,próbujesz podnosisz jedną z czaszek jak tylko zbliżasz rękę ta próbuję cię ugryźć \n"
-            "cofasz się o krok po czym  czujesz coś na swoim ramieniu ,pomału się odwracasz a tam stoi armia \n"
-            "szkieletów.",
-            " Nie mogąc wygrać z ich liczebnością zaczynasz uciekać będąc gonionym przez armię szkieletów .",
-            "Walka nie trwała długo ze względu na kruchość szkieletów szybko je rozpraszasz po czym miażdżysz ich \n"
-            "czaszki by już nigdy nie wstali",
-            "Widząc liczbę nie umarłych próbujesz się wycofać , widząc lukę w ich ustawieniu biegniesz przed siebie \n"
-            "ale niestety gubisz kilka przedmiotów."),
-    # Monster(0.9,
-    #         45,
-    #         25,
-    #         30,
-    #         "Bazyliszek",
-    #
-    #         )
 ]
