@@ -114,7 +114,10 @@ class Player:
     def on_monster_meet(self, monster: Monster) -> bool:
         print(monster.entry_msg)
         self.print_monster_meet_options()
-        choice = int(input("Walka:"))
+        # Accept only numeric values
+        choice = ""
+        while not choice.isnumeric():
+            choice = input("Walka:")
 
         if choice == 2 and self.try_to_run(monster):
             # Fix circular inputs

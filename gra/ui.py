@@ -1,5 +1,5 @@
 from gra.game import GameManager
-from gra.locationsystem import move, get_curr_location, get_previous_location, possible_locations, szukanie
+from gra.locationsystem import *
 
 
 def quit_game(game_mgr: None):
@@ -47,7 +47,7 @@ running: bool = True
 def main_loop(game_mgr):
     while running:
         if game_mgr.player.points >= 500:
-            print("\n\nBrawo! Wygrałeś grę! Uzyskałes ponad 500 punktów!")
+            print("\n\nBrawo! Przeszedłes grę! Uzyskałes ponad 500 punktów!")
             quit_game(game_mgr)
             break
 
@@ -58,7 +58,8 @@ def main_loop(game_mgr):
         elif cmd.isnumeric():
             cmd = int(cmd)
 
-            if cmd not in get_curr_location().id_dst and cmd != get_previous_location().id:
+            # When stack size = 1 previous location does not exist
+            if cmd not in get_curr_location().id_dst and ((len(stack) > 2 and cmd != get_previous_location().id) or len(stack) < 2):
                 print("To miejsce jest za daleko!")
                 possible_locations()
                 continue
